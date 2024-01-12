@@ -1,7 +1,12 @@
+import './style.css';
+
 import homeComponent from "./home";
 import menuComponent from "./menu";
 import aboutComponent from "./about";
 import contactComponent from "./contact";
+
+import Image from './images/hero.jpg'
+
 
 const content = document.querySelector('.content');
 
