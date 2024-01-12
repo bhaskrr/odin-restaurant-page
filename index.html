@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bare Bones Restaurant</title>
+    <link rel="shortcut icon" href="/src/images/favicon.svg" type="image/x-icon">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        #container{
+            height: 100vh;
+            background-image: url("/src/images/hero.jpg");
+            background-size: cover;
+        }
+
+        header{
+            color: white;
+            padding: 20px;
+            position: sticky;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav button{
+            border: 0;
+            height: 40px;
+            margin: 0 20px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: transparent;
+            
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .active{
+            border-bottom: 2px solid rgb(164, 11, 37);
+        }
+
+        .home, .menu, .contact{
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255,255,255,1);
+        }
+
+        .about{
+            padding: 20px;
+            font-size: 1.3rem;
+            word-spacing: 10px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            background-color: rgba(255,255,255,0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="top">
+                <h1>Bare Bones: Simply Delicious</h1>
+                <nav>
+                    <button type="button" class="home-button active" data="1">Home</button>
+                    <button type="button" class="menu-button" data="2">Menu</button>
+                    <button type="button" class="about-button" data="3">About Us</button>
+                    <button type="button" class="contact-button" data="4">Contact</button>
+                </nav>
+            </div>
+            <!-- <p>
+                Fresh, local ingredients, cooked with passion and served with a
+                smile.
+            </p> -->
+        </header>
+        <div class="content">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
